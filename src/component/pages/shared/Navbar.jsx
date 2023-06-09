@@ -1,13 +1,28 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import logo from '../../../assets/images/home/logo.svg'
 const Navbar = () => {
-
+    const user = false;
     const navbarLink = <>
-        <li> <a>Item 1</a></li>
-        <li>
 
+        <li>
+            <Link>Home</Link>
         </li>
-        <li><a>Item 3</a></li>
+        <li>
+            <Link>Instructor</Link>
+        </li>
+        <li>
+            <Link>Classes</Link>
+        </li>
+        {
+            user ? <>
+                <li>   <Link>DashBoard</Link></li>
+                <li>    <button>Profile</button></li>
+            </> : <>
+                <li><Link>LogIn</Link></li>
+            </>
+        }
+
 
     </>
 
@@ -24,16 +39,22 @@ const Navbar = () => {
                         {navbarLink}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-3xl font-bold text-pink-500 ">Arif's Martial Art House</a>
+
+
+
+                <a className="btn btn-ghost normal-case text-3xl font-bold text-pink-500 ">
+                    <img className='w-12 h-12  rounded-full ring ring-white ring-offset-base-100 ring-offset-2' src={logo} alt="" />
+                    Arif's Martial Art House</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal  text-md text-white">
                     {navbarLink}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn btn-outline">Button</a>
-            </div>
+            {/* <div className="navbar-end">
+                <Link className="btn btn-outline btn-primary">LogIn</Link>
+
+            </div> */}
         </div>
 
 
