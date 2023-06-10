@@ -13,7 +13,7 @@ const InstructorCard = ({ teacher }) => {
                 <p>Email: {email}</p>
                 <div className="badge btn-outline badge-primary btn-primary">Class-Taken: {classesTaken}</div>
                 <div className='flex '>
-                    <div className=" ">Class-Name: {classes}</div>
+                    <div className=" "><span className='text-secondary'>Class-Name:</span> {classes}</div>
 
                 </div>
             </div>

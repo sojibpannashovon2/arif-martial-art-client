@@ -6,7 +6,8 @@
         "image": "https://leesata.com/wp-content/uploads/2021/04/RJF_7972-LEE_Tempe_Leadership_Students-1-1-scaled.jpg",
         "category": "popular",
         "seat": 60,
-        "price": 14.7
+        "price": 14.7,
+        "instructor": "John Doe"
     },
     {
         "_id": "642c155b2c4774f05c36eeb9",
@@ -15,7 +16,8 @@
         "image": "https://leesata.com/wp-content/uploads/2021/04/Tigers5.jpg",
         "category": "old",
         "seat": 70,
-        "price": 24.7
+        "price": 24.7,
+        "instructor": "Jane Smith"
     },
     {
         "_id": "642c155b2c4774f05c36ee7c",
@@ -24,7 +26,8 @@
         "image": "https://leesata.com/wp-content/uploads/2020/02/Tempe6.jpg",
         "category": "popular",
         "seat": 40,
-        "price": 44.7
+        "price": 44.7,
+        "instructor": "Michael Johnson"
     },
     {
         "_id": "642c155b2c4774f05c36ee88",
@@ -33,7 +36,8 @@
         "image": "https://media.gq.com/photos/558308c33655c24c6c9576d6/master/w_1600%2Cc_limit/news-and-politics-2015-mma-kids.jpg",
         "category": "new",
         "seat": 90,
-        "price": 104.7
+        "price": 104.7,
+        "instructor": "Emily Davis"
     },
     {
         "_id": "642c155b2c4774f05c36ee7a",
@@ -42,7 +46,8 @@
         "image": "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/wkz6xrsgzijdltmctwls.jpg",
         "category": "popular",
         "seat": 47,
-        "price": 115
+        "price": 115,
+        "instructor": "David Wilson"
     },
     {
         "_id": "642c155b2c4774f05c36ee8c",
@@ -51,7 +56,8 @@
         "image": "https://leesata.com/wp-content/uploads/2021/04/XFit-WP-3.jpg",
         "category": "new",
         "seat": 67,
-        "price": 150
+        "price": 150,
+        "instructor": "Emma Thompson"
     },
     {
         "_id": "642c155b2c4774f05c36ee94",
@@ -60,7 +66,8 @@
         "image": "https://leesata.com/wp-content/uploads/2021/04/Tolleson1-1-1.jpg",
         "category": "popular",
         "seat": 87,
-        "price": 50
+        "price": 50,
+        "instructor": "Daniel Lee"
     },
     {
         "_id": "642c155b2c4774f05c36ee9e",
@@ -69,7 +76,8 @@
         "image": "https://img-b.udemycdn.com/course/750x422/1062522_0aec_2.jpg",
         "category": "new",
         "seat": 27,
-        "price": 58.4
+        "price": 58.4,
+        "instructor": "Olivia Garcia"
     },
     {
         "_id": "642c155b2c4774f05c36eea6",
@@ -78,7 +86,8 @@
         "image": "https://www.travelviewpoint.com/wp-content/uploads/2019/07/kalarippayattu-01.jpg",
         "category": "popular",
         "seat": 57,
-        "price": 19.4
+        "price": 19.4,
+        "instructor": "Matthew Brown"
     },
     {
         "_id": "642c155b2c4774f05c36eeaf",
@@ -87,7 +96,8 @@
         "image": "https://www.kungfumagazine.com//admin/site_images/KungfuMagazine/images/ezine/1371_Dim-Mak1_Lead.jpg",
         "category": "old",
         "seat": 87,
-        "price": 69.4
+        "price": 69.4,
+        "instructor": "Sophia Martinez"
     },
     {
         "_id": "642c155b2c4774f05c36ee89",
@@ -96,7 +106,8 @@
         "image": "https://img-c.udemycdn.com/course/750x422/1613502_dbe2.jpg",
         "category": "old",
         "seat": 87,
-        "price": 69.4
+        "price": 69.4,
+        "instructor": "William Johnson"
     },
     {
         "_id": "642c155b2c4774f05c36ee8a",
@@ -105,6 +116,7 @@
         "image": "https://img-c.udemycdn.com/course/750x422/3718266_8431_4.jpg",
         "category": "popular",
         "seat": 27,
-        "price": 29.4
+        "price": 29.4,
+        "instructor": "Samantha Adams"
     }
 ]

@@ -14,7 +14,7 @@ const Main = () => {
             }
             <Outlet></Outlet>
             {
-                withoutNavFooter2 || withoutNavFooter || <Navbar></Navbar>
+                withoutNavFooter2 || withoutNavFooter || <Footer></Footer>
             }
         </div>
     );

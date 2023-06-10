@@ -6,13 +6,13 @@ const Navbar = () => {
     const navbarLink = <>
 
         <li>
-            <Link>Home</Link>
+            <Link to='/'>Home</Link>
         </li>
         <li>
-            <Link>Instructor</Link>
+            <Link to="/instructors">Instructor</Link>
         </li>
         <li>
-            <Link>Classes</Link>
+            <Link to='/classes'>Classes</Link>
         </li>
         {
             user ? <>

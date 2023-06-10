@@ -22,6 +22,10 @@ const Instructor = () => {
                     ></InstructorCard>)
                 }
             </div>
+            <div className="justify-center text-center my-10 ">
+                <button className="btn btn-success btn-outline px-16">Book Now</button>
+            </div>
+
 
         </div>
     );
