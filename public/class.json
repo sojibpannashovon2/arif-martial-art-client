@@ -1,0 +1,110 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "Karate for Kids",
+        "details": "There are many reasons for kids to become involved in the martial arts. We have developed a program based on traditional Taekwondo for kids called Karate for Kids.",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/RJF_7972-LEE_Tempe_Leadership_Students-1-1-scaled.jpg",
+        "category": "popular",
+        "seat": 60,
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "ATA Tigers",
+        "details": "In addition to our internationally recognized Karate for Kids program, we offer the Taekwondo for Tiny Tigers program. The Tiger program was developed specifically for preschool age children ages 3 through 6. This program offers children a strong foundation in essential character qualities such as courtesy, respect, and discipline.",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Tigers5.jpg",
+        "category": "old",
+        "seat": 70,
+        "price": 24.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Teens & Adults",
+        "details": "A fun and effective martial arts training program for men and women ages 13 and older. Our adult programs are a great way to relieve stress, get and stay in shape, and learn valuable self-defense skills at the same time.",
+        "image": "https://leesata.com/wp-content/uploads/2020/02/Tempe6.jpg",
+        "category": "popular",
+        "seat": 40,
+        "price": 44.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "Kids Fight Club",
+        "details": "Our Kids Fight Club is currently for ages 8 and up and is based on the ideology of fighting, foot work, head movement, Ukemi (break falls), Muay Thai techniques, Boxing techniques, Nage Waza (Judo take downs), Katame Waza (ground fighting), sparring and mental & physical conditioning.",
+        "image": "https://media.gq.com/photos/558308c33655c24c6c9576d6/master/w_1600%2Cc_limit/news-and-politics-2015-mma-kids.jpg",
+        "category": "new",
+        "seat": 90,
+        "price": 104.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "Kickboxing Aerobics Classes",
+        "details": "Kickboxing Aerobics isn't your typical kickboxing program. It's a full body cardio workout in a room full of people just like you, wanting to get in shape, soaked in sweat. Expect to hear the hottest music of today with the volume cranked high and the beat sped up.",
+        "image": "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/wkz6xrsgzijdltmctwls.jpg",
+        "category": "popular",
+        "seat": 47,
+        "price": 115
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "Warrior X-Fit Classes",
+        "details": "The exercises of each workout (or “fight”) in Warrior X-Fit are based on martial arts training. Each exercise has easy-to-follow instructions and videos that you can use at home when you're not  taking class. Each exercise is done for a specified amount of time, as opposed to a certain number of repetitions, so your fights always last 20 minutes. ",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/XFit-WP-3.jpg",
+        "category": "new",
+        "seat": 67,
+        "price": 150
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+        "name": "Cage Fitness Classes",
+        "details": "Cage Fitness™ is based on the structure of a championship MMA bout. What this means is that Cage Fitness™ will give you a total body workout in just 5 - 5 minute rounds. There are four key elements that are focused on: endurance, strength, power and core. ",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Tolleson1-1-1.jpg",
+        "category": "popular",
+        "seat": 87,
+        "price": 50
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "name": "Flips & Kicks! A Beginners Guide to Martialarts Acrobatics",
+        "details": "Challenge yourself and learn acrobatic skills like Kicks, Flips & Twists from the beginning on in this Tricking course.",
+        "image": "https://img-b.udemycdn.com/course/750x422/1062522_0aec_2.jpg",
+        "category": "new",
+        "seat": 27,
+        "price": 58.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "name": "Kalaripayattu",
+        "details": "The ancient martial art culture of India.",
+        "image": "https://www.travelviewpoint.com/wp-content/uploads/2019/07/kalarippayattu-01.jpg",
+        "category": "popular",
+        "seat": 57,
+        "price": 19.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "name": "Martial Arts Dim Mak",
+        "details": "Few subjects in the world of martial arts stir more controversy than Dim Mak—the death touch. Dim Mak (點脈) is the Cantonese translation of dianxue which refers to “pointing blood vessels.” It is also known as 'poison hand.'",
+        "image": "https://www.kungfumagazine.com//admin/site_images/KungfuMagazine/images/ezine/1371_Dim-Mak1_Lead.jpg",
+        "category": "old",
+        "seat": 87,
+        "price": 69.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+        "name": "Single Stick Mastery in Filipino Martial Arts",
+        "details": "Training with the Double Rattan Stick and Stick & Dagger (Espada y Daga)",
+        "image": "https://img-c.udemycdn.com/course/750x422/1613502_dbe2.jpg",
+        "category": "old",
+        "seat": 87,
+        "price": 69.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+        "name": "Martial Arts - Kenjutsu - Long-sword Foundation",
+        "details": "Foundational skills of the Japanese longsword for solo practice (Daitoujutsu - Long-sword Methods)",
+        "image": "https://img-c.udemycdn.com/course/750x422/3718266_8431_4.jpg",
+        "category": "popular",
+        "seat": 27,
+        "price": 29.4
+    }
+]

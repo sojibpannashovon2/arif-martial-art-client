@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Slider from './Slider';
+import PopularClass from './PopularClass';
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 
             <Banner></Banner>
             <Slider></Slider>
+            <PopularClass></PopularClass>
         </div>
     );
 };
