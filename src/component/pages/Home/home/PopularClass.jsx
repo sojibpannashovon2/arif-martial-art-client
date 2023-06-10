@@ -3,6 +3,7 @@ import SectionTitle from '../../../SectionTitle/SectionTitle';
 
 import PopularCard from './PopularCard';
 import useClass from '../../../../hooks/useClass';
+import { Link } from 'react-router-dom';
 
 
 const PopularClass = () => {
@@ -27,7 +28,8 @@ const PopularClass = () => {
                 }
             </div>
             <div className="justify-center text-center my-10 ">
-                <button className="btn btn-success btn-outline px-16">Book Now</button>
+                {/* <button className="btn btn-success btn-outline px-16">Book Now</button> */}
+                <Link to='/classes' className="btn btn-success btn-outline px-16">See Our Available Classes</Link>
             </div>
 
         </div>

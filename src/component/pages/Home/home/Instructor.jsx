@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from '../../../SectionTitle/SectionTitle';
 import { useInstructor } from '../../../../hooks/useInstructor';
 import InstructorCard from './InstructorCard';
+import { Link } from 'react-router-dom';
 
 const Instructor = () => {
     const [teachers] = useInstructor();
@@ -23,7 +24,8 @@ const Instructor = () => {
                 }
             </div>
             <div className="justify-center text-center my-10 ">
-                <button className="btn btn-success btn-outline px-16">Book Now</button>
+                <Link to='/instructors' className="btn btn-success btn-outline px-16">See Our Instructor</Link>
+                {/* <button className="btn btn-success btn-outline px-16">Book Now</button> */}
             </div>
 
 
