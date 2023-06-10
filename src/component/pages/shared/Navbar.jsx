@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li>   <Link>DashBoard</Link></li>
                 <li>    <button>Profile</button></li>
             </> : <>
-                <li><Link>LogIn</Link></li>
+                <li><Link to='/login'>LogIn</Link></li>
             </>
         }
 

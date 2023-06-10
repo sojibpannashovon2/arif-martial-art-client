@@ -5,6 +5,8 @@ import {
 import Main from "../Layouts/Main";
 import Home from "../component/pages/Home/home/Home";
 import ErrorPage from "../component/pages/shared/ErrorPage";
+import Register from "../component/pages/logs/Register";
+import LogIn from "../component/pages/logs/LogIn";
 
 
 const router = createBrowserRouter([
@@ -16,7 +18,15 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
-            }
+            },
+            {
+                path: 'login',
+                element: <LogIn></LogIn>
+            },
+            {
+                path: 'register',
+                element: <Register></Register>
+            },
         ],
 
     },

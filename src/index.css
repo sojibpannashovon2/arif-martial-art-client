@@ -62,6 +62,7 @@ body {
     color: white;
 }
 
+
 .autoplay-progress svg {
     --progress: 0;
     position: absolute;
