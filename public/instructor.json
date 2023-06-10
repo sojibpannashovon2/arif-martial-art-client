@@ -1,0 +1,104 @@
+[
+    {
+        "_id": "609c7a54099a9200018d3b1f",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "classesTaken": 5,
+        "classes": "Karate for Kids",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/0029Resize.png",
+        "category": "popular"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b20",
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "classesTaken": 3,
+        "classes": "ATA Tigers",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Martinez-w-MartinezResize.png"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b21",
+        "name": "Michael Johnson",
+        "email": "michaeljohnson@example.com",
+        "classesTaken": 8,
+        "classes": "Teens & Adults",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Group-Adult-InstructionResize.png"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b22",
+        "name": "Emily Davis",
+        "email": "emilydavis@example.com",
+        "classesTaken": 6,
+        "classes": "Kids Fight Club",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Landgren-TeachesResize.png",
+        "category": "popular"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b23",
+        "name": "David Wilson",
+        "email": "davidwilson@example.com",
+        "classesTaken": 4,
+        "classes": "Kickboxing Aerobics Classes",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Instructors-13-copy-scaled.jpg"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b24",
+        "name": "Emma Thompson",
+        "email": "emmathompson@example.com",
+        "classesTaken": 2,
+        "classes": "Warrior X-Fit Classes",
+        "image": "https://images.squarespace-cdn.com/content/v1/58271deac534a550aaeadb1f/1479410242565-FMP3S20CFG0G6R2E4FRY/30.png",
+        "category": "popular"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b25",
+        "name": "Daniel Lee",
+        "email": "daniellee@example.com",
+        "classesTaken": 9,
+        "classes": "Cage Fitness Classes",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Young-Instructor-TeachesResize.png"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b26",
+        "name": "Olivia Garcia",
+        "email": "oliviagarcia@example.com",
+        "classesTaken": 7,
+        "classes": "Flips & Kicks! A Beginners Guide to Martialarts Acrobatics",
+        "image": "https://media.istockphoto.com/id/516231975/photo/oi-tsuki-strike.jpg?s=612x612&w=0&k=20&c=nEFXTw0qdUiWFuKKZBgbResYJQt_xX5m7_n-t4GDKiQ=",
+        "category": "popular"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b27",
+        "name": "Matthew Brown",
+        "email": "matthewbrown@example.com",
+        "classesTaken": 3,
+        "classes": "Kalaripayattu",
+        "image": "https://pbs.twimg.com/profile_images/1431117611794780163/iz5x2G50_400x400.jpg"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b28",
+        "name": "Sophia Martinez",
+        "email": "sophiamartinez@example.com",
+        "classesTaken": 6,
+        "classes": "Martial Arts Dim Mak",
+        "image": "https://goldenlion.com.au/wp/wp-content/uploads/2014/11/piertigerclaws.jpg",
+        "category": "popular"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b29",
+        "name": "William Johnson",
+        "email": "williamjohnson@example.com",
+        "classesTaken": 4,
+        "classes": "Single Stick Mastery in Filipino Martial Arts",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/0012Resize.png"
+    },
+    {
+        "_id": "609c7a54099a9200018d3b2a",
+        "name": "Samantha Adams",
+        "email": "samanthaadams@example.com",
+        "classesTaken": 5,
+        "classes": "Martial Arts - Kenjutsu - Long-sword Foundation",
+        "image": "https://leesata.com/wp-content/uploads/2021/04/Delgado-w-LochridgeResize.png",
+        "category": "popular"
+    }
+]
