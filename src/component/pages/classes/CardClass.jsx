@@ -2,18 +2,10 @@ import React from 'react';
 import Swal from 'sweetalert2';
 
 
-// Image
-// Name
-// Instructor name
-// Available seats
-// Price
-// Select Button. If the user is not logged in, then tell the user to log in before selecting the course. This button will be disabled if:
-// Available seats are 0
-// Logged in as admin/instructor
-// The class card background will be red if the available seats are 0.
+
 
 const CardClass = ({ item }) => {
-    console.log(item);
+    // console.log(item);
 
     const handleBooking = (id) => {
         Swal.fire({
@@ -40,10 +32,10 @@ const CardClass = ({ item }) => {
                     {item?.name}
                     {/* <div className="badge badge-secondary">NEW</div> */}
                 </h2>
-                <p className="">
+                <div className="">
                     {item?.instructor}
                     <div className="badge badge-secondary badge-outline badge-sm ml-6">Popular</div>
-                </p>
+                </div>
 
                 <div className="card-actions justify-between">
                     <div className="badge badge-outline p-3">Seats: {item?.seat}</div>
