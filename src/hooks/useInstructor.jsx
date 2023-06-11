@@ -6,7 +6,7 @@ export const useInstructor = () => {
     const [teachers, setTeacher] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch("instructor.json")
+        fetch("http://localhost:11000/instructors")
             .then(res => res.json())
             .then(data => {
                 setTeacher(data);

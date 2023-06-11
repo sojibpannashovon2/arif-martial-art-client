@@ -10,6 +10,8 @@ import LogIn from "../component/pages/logs/LogIn";
 import Classes from "../component/pages/classes/Classes";
 import Instructor from "../component/pages/Home/home/Instructor";
 import Instructors from "../component/pages/Instructor/Instructors";
+import Dashboard from "../component/dashboard/Dashboard/Dashboard";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'classes',
-                element: <Classes></Classes>
+                element: <PrivateRoute><Classes></Classes></PrivateRoute>
             },
             {
                 path: 'instructors',
@@ -41,6 +43,13 @@ const router = createBrowserRouter([
         ],
 
     },
+    {
+        path: "dashboard",
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+        children: [
+
+        ]
+    }
 ]);
 
 export default router;

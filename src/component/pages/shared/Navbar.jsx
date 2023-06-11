@@ -28,7 +28,7 @@ const Navbar = () => {
         </li>
         {
             user ? <>
-                <li>   <Link>DashBoard</Link></li>
+                <li>   <Link to='/dashboard'>DashBoard</Link></li>
                 <li className=''> <img style={{ height: "50px", width: "70px" }} className=' rounded-full  ' src={user?.photoURL} alt="" /></li>
                 <li onClick={handleLogOut} className='btn btn-outline btn-sm btn-error'>
                     Log-out
