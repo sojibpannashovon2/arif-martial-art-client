@@ -9,7 +9,7 @@ const Navbar = () => {
     // const user = false;
     const { user, logout } = useContext(authContext)
     const [cart] = useCart()
-    console.log(cart);
+    // console.log(cart);
     const handleLogOut = () => {
         logout()
             .then(() => {
@@ -32,11 +32,21 @@ const Navbar = () => {
         </li>
         {
             user ? <>
-                <li>   <Link to='/dashboard'>DashBoard</Link></li>
-                <li className=''> <img style={{ height: "50px", width: "70px" }} className=' rounded-full  ' src={user?.photoURL} alt="" /></li>
+
+
+                <small>
+                    <img style={{ height: "30px", width: "30px", borderRadius: "10px" }} className=' rounded-4  ' src={user?.photoURL} alt="" />
+                </small>
+
                 <li onClick={handleLogOut} className='btn btn-outline btn-sm btn-error'>
                     Log-out
                 </li>
+
+                <Link to='/dashboard/mycart' className="btn btn-outline btn-sm flex justify-center items-center">
+
+                    <FaShoppingCart></FaShoppingCart>
+                    <div className="badge badge-success">+{cart?.length || 0}</div>
+                </Link>
             </> : <>
                 <li><Link to='/login'>LogIn</Link></li>
             </>
@@ -62,18 +72,18 @@ const Navbar = () => {
 
 
                 <a className="btn btn-ghost normal-case text-3xl font-bold text-pink-500 ">
-                    <img className='w-12 h-12  rounded-full ring ring-white ring-offset-base-100 ring-offset-2' src={logo} alt="" />
+                    <img className='w-10 h-10  rounded-full ring ring-white ring-offset-base-100 ring-offset-2' src={logo} alt="" />
                     Arif's Martial Art House</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal  text-md text-white">
+                <ul className="menu menu-horizontal  text-md text-white flex justify-center items-center gap-3">
                     {navbarLink}
                 </ul>
             </div>
-            <button className="btn btn-outline btn-md">
+            {/* <button className="btn btn-outline btn-md">
                 <FaShoppingCart></FaShoppingCart>
                 <div className="badge badge-secondary">+{cart?.length || 0}</div>
-            </button>
+            </button> */}
         </div>
 
 

@@ -8,10 +8,12 @@ import ErrorPage from "../component/pages/shared/ErrorPage";
 import Register from "../component/pages/logs/Register";
 import LogIn from "../component/pages/logs/LogIn";
 import Classes from "../component/pages/classes/Classes";
-import Instructor from "../component/pages/Home/home/Instructor";
+
 import Instructors from "../component/pages/Instructor/Instructors";
-import Dashboard from "../component/dashboard/Dashboard/Dashboard";
+
 import PrivateRoute from "./PrivateRoute";
+import MyCart from "../component/dashboard/User/MyCart";
+import Dashboard from "../Layouts/Dashboard";
 
 
 const router = createBrowserRouter([
@@ -47,7 +49,10 @@ const router = createBrowserRouter([
         path: "dashboard",
         element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
-
+            {
+                path: "mycart",
+                element: <MyCart></MyCart>
+            }
         ]
     }
 ]);
