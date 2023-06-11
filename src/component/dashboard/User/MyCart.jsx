@@ -52,7 +52,7 @@ const MyCart = () => {
         <div className='text-white'>
             <div >
                 <div className='flex justify-between my-8 font-bold text-2xl'>
-                    <h3>Total Items: {cart.length}</h3>
+                    <h3>Total Items: {cart?.length}</h3>
 
                     <h3>Total Price: ${newTotal}</h3>
                     <button className="btn btn-warning btn-sm ">Pay Now</button>
