@@ -1,26 +1,59 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Swal from 'sweetalert2';
+import { authContext } from '../../../providers/AuthProvider';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 
 
 const CardClass = ({ item }) => {
     // console.log(item);
+    const { name, _id, instructor, seat, price } = item || {}
+    const { user } = useContext(authContext)
+    const navigate = useNavigate();
+    const location = useLocation();
+    const handleBooking = (item) => {
+        console.log(item);
+        if (user && user?.email) {
+            const classItem = { artId: _id, name, instructor, seat, price, email: user?.email }
+            fetch(`http://localhost:11000/carts`, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(classItem)
 
-    const handleBooking = (id) => {
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "Please login to Booking the Class!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Log-In'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // navigate('/login', { state: { from: location } })
-            }
-        })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.insertedId) {
+
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    }
+                })
+        }
+        else {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "Please login to Booking the Class!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Log-In'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/login', { state: { from: location } })
+                }
+            })
+        }
+
     }
     return (
         <div className="card w-full h-full bg-black bg-opacity-30  shadow-2xl border border-success p-3">
@@ -42,7 +75,7 @@ const CardClass = ({ item }) => {
                     <div className="badge badge-outline p-3">Price: {item?.price}</div>
 
                 </div>
-                <div onClick={() => handleBooking(item?._id)} className="btn btn-outline btn-primary btn-sm my-4">BooK-Now</div>
+                <div onClick={() => handleBooking(item)} className="btn btn-outline btn-primary btn-sm my-4">BooK-Now</div>
             </div>
         </div>
     );
