@@ -27,6 +27,26 @@ const AllUsers = () => {
                 }
             })
     }
+
+    const handleMakeInstructor = (user) => {
+        console.log(user);
+        fetch(`http://localhost:11000/users/instructor/${user?._id}`, {
+            method: "PATCH"
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    refetch()
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: `${user.name} is now Instructor !!`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            })
+    }
     return (
         < div className='text-white'>
 
@@ -62,7 +82,7 @@ const AllUsers = () => {
                                 </td>
                                 <td>
                                     {
-                                        user.role == 'instructor' ? "Instructor" : <span onClick={() => handleMakeAdmin(user)} className="btn btn-ghost hover:bg-orange-600 ">
+                                        user.role == 'instructor' ? "Instructor" : <span onClick={() => handleMakeInstructor(user)} className="btn btn-ghost hover:bg-orange-600 ">
                                             <FaUserEdit className='w-8 h-8'></FaUserEdit>
                                         </span>
                                     }
