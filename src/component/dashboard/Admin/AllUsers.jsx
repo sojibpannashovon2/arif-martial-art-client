@@ -9,7 +9,7 @@ const AllUsers = () => {
     })
 
     const handleMakeAdmin = (user) => {
-        console.log(user);
+        // console.log(user);
         fetch(`https://arif-martial-art-server.vercel.app/users/admin/${user?._id}`, {
             method: "PATCH"
         })

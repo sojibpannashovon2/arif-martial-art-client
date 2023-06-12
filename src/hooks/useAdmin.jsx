@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const useAdmin = () => {
     const { user, loading } = useContext(authContext)
-    console.log(user?.email);
+    // console.log(user?.email);
 
 
     const { data: isAdmin, isLoading: isAdminLoading } = useQuery({

@@ -17,6 +17,7 @@ import Dashboard from "../Layouts/Dashboard";
 import AllUsers from "../component/dashboard/Admin/AllUsers";
 import AddClass from "../component/dashboard/teacher/AddClass";
 import MyClass from "../component/dashboard/teacher/MyClass";
+import ManageClasses from "../component/dashboard/Admin/ManageClasses";
 
 
 const router = createBrowserRouter([
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
             {
                 path: "myclass",
                 element: <MyClass></MyClass>
+            },
+            {
+                path: "manageClass",
+                element: <ManageClasses></ManageClasses>
             },
         ]
     }

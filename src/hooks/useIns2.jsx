@@ -5,7 +5,7 @@ import { authContext } from '../providers/AuthProvider';
 
 const useIns2 = () => {
     const { user } = useContext(authContext)
-    console.log(user?.email);
+    // console.log(user?.email);
     const [adnan, setAdnan] = useState([])
     useEffect(() => {
         fetch(`https://arif-martial-art-server.vercel.app/users/instructor/${user?.email}`)
@@ -15,7 +15,7 @@ const useIns2 = () => {
 
 
     }, [user?.email])
-    console.log(adnan);
+    // console.log(adnan);
     return [adnan]
 };
 

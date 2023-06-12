@@ -3,7 +3,7 @@ import { authContext } from '../providers/AuthProvider';
 
 const useAdmin2 = () => {
     const { user } = useContext(authContext)
-    console.log(user?.email);
+    // console.log(user?.email);
     const [result, setResult] = useState([])
     useEffect(() => {
         fetch(`https://arif-martial-art-server.vercel.app/users/admin/${user?.email}`)
@@ -13,7 +13,7 @@ const useAdmin2 = () => {
 
 
     }, [user?.email])
-    console.log(result);
+
     return [result]
 };
 

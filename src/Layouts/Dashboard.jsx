@@ -12,16 +12,10 @@ import useIns2 from '../hooks/useIns2';
 
 const Dashboard = () => {
 
-    // TODO: load data from server to create dynamic admin
-    // const [isAdmin] = useAdmin();
-    // const [isInstructor] = useIns();
-    // const role = 'instructor'
-    // const isInstructor = true;
-    // const isAdmin = true;
+
     const [adnan] = useIns2();
     const [result] = useAdmin2()
-    console.log(adnan);
-    console.log(result);
+
 
 
     return (
@@ -48,7 +42,7 @@ const Dashboard = () => {
                             <>
                                 <h1 className='text-2xl font-bold text-warning'>Admin pannel</h1>
                                 <li>
-                                    <Link to='/dashboard/mycart'>
+                                    <Link to='/dashboard/manageClass'>
                                         <FaWallet></FaWallet>
                                         Manage classes
                                     </Link>
@@ -95,65 +89,8 @@ const Dashboard = () => {
 
                     )}
 
-                    {/* {
-                        result && (
-                            <div>
-                                <h1 className='text-2xl font-bold text-warning'>Admin pannel</h1>
-                                <li>
-                                    <Link to='/dashboard/mycart'>
-                                        <FaWallet></FaWallet>
-                                        Manage classes
-                                    </Link>
-                                </li>
-                                <li>
 
-                                    <Link to="/dashboard/alluser">
-                                        <FaUserAlt></FaUserAlt>
-                                        Manage users</Link>
-                                </li>
-                            </div>
-                        )
-                    }
-                    {
-                        adnan && (
-                            <div>
-                                <h1 className='text-2xl font-bold text-warning'>Instructor pannel</h1>
-                                <li>
-                                    <Link to='/dashboard/addclass'>
-                                        <FaShoppingBag></FaShoppingBag>
-                                        Add a clases
-                                    </Link>
-                                </li>
-                                <li>
 
-                                    <Link to='/dashboard/myclass'>
-                                        <FaThList></FaThList>
-                                        My Class</Link>
-                                </li>
-                            </div>
-                        )
-                    }
-
-                    {
-                        !result && !adnan(
-                            <div>
-                                <h1 className='text-2xl font-bold text-warning'>User pannel</h1>
-                                <li>
-                                    <Link to='/dashboard/mycart'>
-                                        <FaSearchLocation></FaSearchLocation>
-                                        My Selected Class
-                                    </Link>
-                                </li>
-                                <li>
-
-                                    <Link>
-                                        <FaBoxOpen></FaBoxOpen>
-                                        My Enrolled Class</Link>
-                                </li>
-
-                            </div>
-                        )
-                    } */}
 
 
 
