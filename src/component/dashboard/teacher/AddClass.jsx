@@ -22,7 +22,7 @@ const AddClass = () => {
         const newClass = { name, instructorName, email, seat, price, details, image }
         console.log(newClass);
 
-        fetch(`http://localhost:11000/classes`, {
+        fetch(`https://arif-martial-art-server.vercel.app/classes`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"

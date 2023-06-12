@@ -18,7 +18,7 @@ const CardClass = ({ item }) => {
         console.log(item);
         if (user && user?.email) {
             const classItem = { artId: _id, name, image, instructor, seat, price, email: user?.email }
-            fetch(`http://localhost:11000/carts`, {
+            fetch(`https://arif-martial-art-server.vercel.app/carts`, {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

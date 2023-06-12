@@ -1,61 +1,17 @@
 import React from 'react';
+import useClass from '../../../hooks/useClass';
 
-import {
-    FaTrash
+const MyClass = () => {
 
-} from "react-icons/fa";
-import Swal from 'sweetalert2';
-import useCart from '../../../hooks/useCart';
+    const [classes] = useClass();
 
-const MyCart = () => {
-    const [cart, refetch] = useCart();
-    const total = cart?.reduce((sum, item) => item.price + sum, 0)
-    const newTotal = total.toFixed(2)
-    // console.log(cart);
-    const handleDelete = (row) => {
-        // console.log(id);
-
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                fetch(`https://arif-martial-art-server.vercel.app/carts/${row._id}`, {
-                    method: "DELETE",
-
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log(data);
-                        if (data.deletedCount > 0) {
-                            refetch();
-                            Swal.fire(
-                                'Deleted!',
-                                'Your file has been deleted.',
-                                'success'
-                            )
-                        }
-
-                    })
-
-            }
-        })
-
-
-    }
     return (
         <div className='text-white'>
             <div >
                 <div className='flex justify-between my-8 font-bold text-2xl'>
-                    <h3>Total Items: {cart?.length}</h3>
+                    <h3>Total Classes: {classes?.length}</h3>
+                    <h3>Total Enrolled Student: 10</h3>
 
-                    <h3>Total Price: ${newTotal}</h3>
-                    <button className="btn btn-warning btn-sm ">Pay Now</button>
 
                 </div>
                 <div className="overflow-x-auto ">
@@ -66,15 +22,16 @@ const MyCart = () => {
                                 <th>
                                     #
                                 </th>
-                                <th>Food</th>
-                                <th>Food-Name</th>
+                                <th>Art</th>
+                                <th>Class-Name</th>
                                 <th>Price</th>
+                                <th>Feedback</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody >
                             {
-                                cart?.map((row, index) => <tr
+                                classes?.map((row, index) => <tr
 
                                     key={row?._id}
                                 >
@@ -95,9 +52,12 @@ const MyCart = () => {
                                         {row?.name}
                                     </td>
                                     <td>${row?.price}</td>
+                                    <td>
+                                        <button className='btn btn-secondary btn-sm'>Approved</button>
+                                        <textarea name="" className='p-2' value={`Approved by Admin`} id="" cols="20" rows="2"></textarea></td>
                                     <th >
-                                        <button onClick={() => handleDelete(row)} className="btn btn-ghost hover:bg-red-600 ">
-                                            <FaTrash className='w-8 h-8'></FaTrash>
+                                        <button className="btn btn-ghost hover:bg-red-600 ">
+                                            Update
                                         </button>
                                     </th>
                                 </tr>)
@@ -115,4 +75,4 @@ const MyCart = () => {
     );
 };
 
-export default MyCart;
+export default MyClass;

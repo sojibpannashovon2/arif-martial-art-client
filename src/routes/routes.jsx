@@ -16,6 +16,7 @@ import MyCart from "../component/dashboard/User/MyCart";
 import Dashboard from "../Layouts/Dashboard";
 import AllUsers from "../component/dashboard/Admin/AllUsers";
 import AddClass from "../component/dashboard/teacher/AddClass";
+import MyClass from "../component/dashboard/teacher/MyClass";
 
 
 const router = createBrowserRouter([
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
             {
                 path: "addclass",
                 element: <AddClass></AddClass>
+            },
+            {
+                path: "myclass",
+                element: <MyClass></MyClass>
             },
         ]
     }

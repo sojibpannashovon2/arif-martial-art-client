@@ -1,19 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { authContext } from '../providers/AuthProvider';
 import { useQuery } from '@tanstack/react-query';
 
+
 const useAdmin = () => {
-    const { user } = useContext(authContext)
+    const { user, loading } = useContext(authContext)
+    console.log(user?.email);
 
 
-    const { data: role, isLoading: isAdminLoading } = useQuery({
-        queryKey: ['role', user?.email],
+    const { data: isAdmin, isLoading: isAdminLoading } = useQuery({
+        queryKey: ['isAdmin', user?.email],
+        enabled: !!user?.email && !loading,
         queryFn: async () => {
-            const response = await fetch(`http://localhost:11000/users/admin/${user?.email}`)
-            return response.data.admin;
+            const response = await fetch(`https://arif-martial-art-server.vercel.app/users/admin/${user?.email}`)
+            const data = response.json()
+            console.log(data);
+            return data;
         },
     })
-    return [role, isAdminLoading];
+    // console.log(isAdmin);
+    return [isAdmin, isAdminLoading];
 };
 
 export default useAdmin;

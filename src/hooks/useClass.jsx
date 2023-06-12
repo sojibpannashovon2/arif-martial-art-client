@@ -5,7 +5,7 @@ const useClass = () => {
     const [classes, setClasses] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch("http://localhost:11000/classes")
+        fetch("https://arif-martial-art-server.vercel.app/classes")
             .then(res => res.json())
             .then(data => {
                 setClasses(data);

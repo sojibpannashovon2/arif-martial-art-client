@@ -4,13 +4,13 @@ import { FaTrash, FaUserEdit, FaUserShield } from 'react-icons/fa';
 
 const AllUsers = () => {
     const { data: users = [], refetch } = useQuery(['user'], async () => {
-        const res = await fetch('http://localhost:11000/users')
+        const res = await fetch('https://arif-martial-art-server.vercel.app/users')
         return res.json();
     })
 
     const handleMakeAdmin = (user) => {
         console.log(user);
-        fetch(`http://localhost:11000/users/admin/${user?._id}`, {
+        fetch(`https://arif-martial-art-server.vercel.app/users/admin/${user?._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())
@@ -30,7 +30,7 @@ const AllUsers = () => {
 
     const handleMakeInstructor = (user) => {
         console.log(user);
-        fetch(`http://localhost:11000/users/instructor/${user?._id}`, {
+        fetch(`https://arif-martial-art-server.vercel.app/users/instructor/${user?._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())

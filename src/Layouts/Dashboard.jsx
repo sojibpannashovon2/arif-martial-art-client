@@ -1,30 +1,28 @@
 import React from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import {
-    FaShoppingCart,
-    FaWallet,
-    FaHome,
-    FaCalendar,
-    FaShoppingBag,
-    FaThList,
-    FaUserFriends,
-    FaBook,
-    FaThLarge,
-    FaSearchLocation,
-    FaBoxOpen,
-    FaShopify,
-    FaAlignJustify,
-    FaUserAlt
-
+    FaWallet, FaHome, FaShoppingBag, FaThList, FaUserFriends, FaSearchLocation,
+    FaBoxOpen, FaShopify, FaAlignJustify, FaUserAlt
 } from "react-icons/fa";
 import useAdmin from '../hooks/useAdmin';
+import useIns from '../hooks/useIns';
+import useAdmin2 from '../hooks/useAdmin2';
+import useIns2 from '../hooks/useIns2';
 
 
 const Dashboard = () => {
 
     // TODO: load data from server to create dynamic admin
-    // const [role] = useAdmin();
-    const role = 'instructor'
+    // const [isAdmin] = useAdmin();
+    // const [isInstructor] = useIns();
+    // const role = 'instructor'
+    // const isInstructor = true;
+    // const isAdmin = true;
+    const [adnan] = useIns2();
+    const [result] = useAdmin2()
+    console.log(adnan);
+    console.log(result);
+
 
     return (
         <div className="drawer lg:drawer-open ">
@@ -45,8 +43,8 @@ const Dashboard = () => {
 
 
 
-                    {
-                        role === 'admin' ?
+                    {(
+                        result?.admin ?
                             <>
                                 <h1 className='text-2xl font-bold text-warning'>Admin pannel</h1>
                                 <li>
@@ -61,9 +59,9 @@ const Dashboard = () => {
                                         <FaUserAlt></FaUserAlt>
                                         Manage users</Link>
                                 </li>
-                            </>
-                            : role === 'instructor' ?
-                                <>
+                            </> :
+                            adnan?.instructor ?
+                                (<div>
                                     <h1 className='text-2xl font-bold text-warning'>Instructor pannel</h1>
                                     <li>
                                         <Link to='/dashboard/addclass'>
@@ -73,11 +71,12 @@ const Dashboard = () => {
                                     </li>
                                     <li>
 
-                                        <Link>
+                                        <Link to='/dashboard/myclass'>
                                             <FaThList></FaThList>
                                             My Class</Link>
                                     </li>
-                                </> : <>
+                                </div>) :
+                                (<div>
                                     <h1 className='text-2xl font-bold text-warning'>User pannel</h1>
                                     <li>
                                         <Link to='/dashboard/mycart'>
@@ -92,15 +91,78 @@ const Dashboard = () => {
                                             My Enrolled Class</Link>
                                     </li>
 
-                                </>
+                                </div>)
+
+                    )}
+
+                    {/* {
+                        result && (
+                            <div>
+                                <h1 className='text-2xl font-bold text-warning'>Admin pannel</h1>
+                                <li>
+                                    <Link to='/dashboard/mycart'>
+                                        <FaWallet></FaWallet>
+                                        Manage classes
+                                    </Link>
+                                </li>
+                                <li>
+
+                                    <Link to="/dashboard/alluser">
+                                        <FaUserAlt></FaUserAlt>
+                                        Manage users</Link>
+                                </li>
+                            </div>
+                        )
                     }
+                    {
+                        adnan && (
+                            <div>
+                                <h1 className='text-2xl font-bold text-warning'>Instructor pannel</h1>
+                                <li>
+                                    <Link to='/dashboard/addclass'>
+                                        <FaShoppingBag></FaShoppingBag>
+                                        Add a clases
+                                    </Link>
+                                </li>
+                                <li>
+
+                                    <Link to='/dashboard/myclass'>
+                                        <FaThList></FaThList>
+                                        My Class</Link>
+                                </li>
+                            </div>
+                        )
+                    }
+
+                    {
+                        !result && !adnan(
+                            <div>
+                                <h1 className='text-2xl font-bold text-warning'>User pannel</h1>
+                                <li>
+                                    <Link to='/dashboard/mycart'>
+                                        <FaSearchLocation></FaSearchLocation>
+                                        My Selected Class
+                                    </Link>
+                                </li>
+                                <li>
+
+                                    <Link>
+                                        <FaBoxOpen></FaBoxOpen>
+                                        My Enrolled Class</Link>
+                                </li>
+
+                            </div>
+                        )
+                    } */}
+
+
 
 
                     <hr className='my-5' />
                     <li>
                         <Link to='/'>
                             <FaHome></FaHome>
-                            User Home
+                            Home
                         </Link>
                     </li>
                     <li>

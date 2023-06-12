@@ -6,7 +6,7 @@ export const useInstructor = () => {
     const [teachers, setTeacher] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch("http://localhost:11000/instructors")
+        fetch("https://arif-martial-art-server.vercel.app/instructors")
             .then(res => res.json())
             .then(data => {
                 setTeacher(data);
