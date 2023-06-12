@@ -15,6 +15,7 @@ import PrivateRoute from "./PrivateRoute";
 import MyCart from "../component/dashboard/User/MyCart";
 import Dashboard from "../Layouts/Dashboard";
 import AllUsers from "../component/dashboard/Admin/AllUsers";
+import AddClass from "../component/dashboard/teacher/AddClass";
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             {
                 path: "alluser",
                 element: <AllUsers></AllUsers>
+            },
+            {
+                path: "addclass",
+                element: <AddClass></AddClass>
             },
         ]
     }

@@ -17,13 +17,14 @@ import {
     FaUserAlt
 
 } from "react-icons/fa";
+import useAdmin from '../hooks/useAdmin';
 
 
 const Dashboard = () => {
 
     // TODO: load data from server to create dynamic admin
-
-    const role = "admin"
+    // const [role] = useAdmin();
+    const role = 'instructor'
 
     return (
         <div className="drawer lg:drawer-open ">
@@ -65,7 +66,7 @@ const Dashboard = () => {
                                 <>
                                     <h1 className='text-2xl font-bold text-warning'>Instructor pannel</h1>
                                     <li>
-                                        <Link to='/dashboard/mycart'>
+                                        <Link to='/dashboard/addclass'>
                                             <FaShoppingBag></FaShoppingBag>
                                             Add a clases
                                         </Link>
