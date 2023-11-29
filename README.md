@@ -1,4 +1,27 @@
+Admin Gmail: salman@420.com
+Admin password: 127538mP$
+
+
+
 ![image](https://github.com/sojibpannashovon2/arif-martial-art-client/assets/108423803/0df4660a-424a-4167-b5cd-35c70ad6ddf4)
+
+
+
+![image](https://github.com/sojibpannashovon2/arif-martial-art-client/assets/108423803/e3ee95bc-de9b-46fe-8af4-01923a23a212)
+
+
+![image](https://github.com/sojibpannashovon2/arif-martial-art-client/assets/108423803/24e783fa-6bc5-4b8c-ab1c-160a97aa0861)
+
+
+![image](https://github.com/sojibpannashovon2/arif-martial-art-client/assets/108423803/65bdbd27-098e-41d8-ad20-29b83af17d59)
+
+
+
+![Uploading image.png…]()
+
+
+
+
 
 
 
